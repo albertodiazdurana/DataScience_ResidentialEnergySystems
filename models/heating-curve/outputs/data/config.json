@@ -1,0 +1,59 @@
+{
+  "original": {
+    "slope": 1.4,
+    "t_base": 20.0,
+    "t_room_day": 20.0,
+    "t_room_night": 16.0,
+    "t_outdoor_summer_cutoff": 15.0,
+    "t_vorlauf_min": 25.0,
+    "t_vorlauf_max": 75.0,
+    "night_start_hour": 22,
+    "night_end_hour": 6
+  },
+  "low_temp": {
+    "slope": 1.4,
+    "t_base": 20.0,
+    "t_room_day": 20.0,
+    "t_room_night": 16.0,
+    "t_outdoor_summer_cutoff": 15.0,
+    "t_vorlauf_min": 25.0,
+    "t_vorlauf_max": 55.0,
+    "night_start_hour": 22,
+    "night_end_hour": 6
+  },
+  "noise_models": {
+    "model_1": {
+      "name": "Clean Data",
+      "gaussian_sigma": 1.5,
+      "dhw_spike_probability": 0.0,
+      "dhw_spike_magnitude": 0,
+      "missing_rate": 0.0,
+      "outlier_rate": 0.0,
+      "stuck_sensor_rate": 0.0
+    },
+    "model_2": {
+      "name": "Moderate Noise",
+      "gaussian_sigma": 3.5,
+      "dhw_spike_probability": 0.02,
+      "dhw_spike_magnitude": 12,
+      "missing_rate": 0.0,
+      "outlier_rate": 0.005,
+      "stuck_sensor_rate": 0.0
+    },
+    "model_3": {
+      "name": "Noisy/Realistic",
+      "gaussian_sigma": 5.0,
+      "dhw_spike_probability": 0.03,
+      "dhw_spike_magnitude": 15,
+      "missing_rate": 0.05,
+      "outlier_rate": 0.015,
+      "stuck_sensor_rate": 0.01
+    }
+  },
+  "data_source": {
+    "api": "Open-Meteo Historical Weather API",
+    "location": "Berlin (52.52\u00b0N, 13.41\u00b0E)",
+    "period": "2023-11-01 to 2024-03-31",
+    "resolution": "15 minutes"
+  }
+}

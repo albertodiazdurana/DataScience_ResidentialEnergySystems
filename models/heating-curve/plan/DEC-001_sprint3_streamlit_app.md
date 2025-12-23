@@ -25,11 +25,28 @@ The CONFIG dictionary defined in `model.ipynb` contains parameters that signific
 
 ### Input Parameters (Sliders/Inputs)
 
+**Weather Data Selection:**
+
+| Parameter | Range | Default | Unit |
+|-----------|-------|---------|------|
+| Location | City selector or coordinates | Berlin | - |
+| Start date | 1940-01-01 to present | 2023-11-01 | date |
+| End date | Start date to present | 2024-03-31 | date |
+
+*Note: Open-Meteo Historical API provides data from 1940 onwards. Interesting winters to explore:*
+- *2010-2011: Very cold Berlin winter*
+- *2012-2013: Long, cold winter*
+- *2023-2024: Mild winter (current default)*
+
+**Heating Curve Parameters:**
+
 | Parameter | Range | Default | Unit |
 |-----------|-------|---------|------|
 | Slope (K) | 0.2 - 2.0 | 1.4 | - |
 | Room target day | 18 - 24 | 20 | °C |
 | Room target night | 14 - 20 | 16 | °C |
+| T_vorlauf_max | 45 - 80 | 75 | °C |
+| T_vorlauf_min | 20 - 35 | 25 | °C |
 | Summer cutoff | 12 - 20 | 15 | °C |
 | Night start hour | 20 - 24 | 22 | hour |
 | Night end hour | 4 - 8 | 6 | hour |
