@@ -2,7 +2,11 @@
 
 Interactive web application for simulating and analyzing heating curves (Heizkennlinie) in residential buildings.
 
-## Quick Start
+## Live Demo
+
+**[Try the app on Streamlit Community Cloud](https://datascience-residentialenergysystems-heating-curve.streamlit.app)**
+
+## Quick Start (Local Development)
 
 ```bash
 # Navigate to heating-curve directory
@@ -13,8 +17,8 @@ cd models/heating-curve
 # or
 source .venv/bin/activate    # Linux/Mac
 
-# Install dependencies (if not already installed)
-pip install streamlit plotly
+# Install dependencies
+pip install -r app/requirements.txt
 
 # Run the application
 streamlit run app/streamlit_app.py
@@ -30,6 +34,9 @@ Generate synthetic heating curve data with:
 - **Building Presets**: Heat Pump, Good Insulation, Poor Insulation, Historic
 - **Configurable Parameters**: Slope, room targets, temperature limits
 - **Noise Models**: Clean (Model 1), Moderate (Model 2), Noisy (Model 3)
+- **Location Selection**: 8 German cities with different climate profiles
+- **Heating Seasons**: Multiple winter periods (2010-2024) for comparison
+- **Real Weather Data**: Historical data from [Open-Meteo API](https://open-meteo.com/)
 - **Interactive Plots**: Plotly scatter plots with day/night coloring
 - **Data Export**: Download simulated data as CSV
 
@@ -41,6 +48,15 @@ Extract heating curve parameters from data:
 - **Detected Features**: Temperature limits, day/night modes
 - **Ground Truth Comparison**: See extraction errors vs known parameters
 
+### Standards & References
+
+All parameter values are based on German norms and industry practice:
+- **DIN EN 12831**: Heat load calculation, indoor design temperature
+- **VDI 6030**: Heating curve slopes per building type
+- **VDI 2067**: Night setback recommendations
+- **DIN 4703**: Radiator design temperatures
+- **GEG/EnEV**: Building energy regulations
+
 ## Module Structure
 
 ```
@@ -48,7 +64,10 @@ app/
 ├── streamlit_app.py    # Main Streamlit application
 ├── simulation.py       # Heating curve simulation functions
 ├── analysis.py         # Parameter extraction algorithms
-├── config.py           # Presets and default configurations
+├── config.py           # Presets, defaults, and reference values
+├── requirements.txt    # Dependencies for deployment
+├── .streamlit/         # Streamlit configuration
+│   └── config.toml     # Theme and server settings
 ├── __init__.py         # Package initialization
 └── README.md           # This file
 ```
@@ -105,4 +124,13 @@ datetime,t_outdoor,t_vorlauf,is_night
 
 - [model.ipynb](../model.ipynb) - Sprint 1: Simulation development
 - [analysis.ipynb](../analysis.ipynb) - Sprint 2: Algorithm development
-- [Sprint3 Plan](../plan/HeatingCurve_ProjectPlan_Sprint3.md) - Project plan
+- [Sprint 3 Plan](../plan/HeatingCurve_ProjectPlan_Sprint3.md) - Application development plan
+
+## License
+
+Part of the [Residential Energy Systems](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems) project.
+
+## Author
+
+**Alberto Diaz Durana**
+[GitHub](https://github.com/albertodiazdurana) | [LinkedIn](https://www.linkedin.com/in/albertodiazdurana/)
