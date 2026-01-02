@@ -104,6 +104,38 @@ with st.sidebar:
     Default: Berlin, 2023-2024 heating season.
     """)
 
+    st.divider()
+
+    # Collapsible references section
+    with st.expander("📖 **Standards & References**"):
+        st.markdown("""
+        **German Norms (DIN/VDI)**
+
+        | Standard | Description |
+        |----------|-------------|
+        | DIN EN 12831 | Heat load calculation, indoor design temp (20°C) |
+        | DIN EN 1264 | Floor heating systems (max 35°C Vorlauf) |
+        | DIN 4703 | Radiator design temperatures |
+        | VDI 2067 | Night setback recommendations (4K) |
+        | VDI 6030 | Heating curve slopes per building type |
+
+        **Building Efficiency**
+
+        | Standard | Description |
+        |----------|-------------|
+        | GEG | Gebäudeenergiegesetz (Building Energy Act) |
+        | EnEV | Energieeinsparverordnung (predecessor to GEG) |
+        | KfW 40/55/70 | Efficiency classes (% of reference building) |
+
+        **Parameter Sources**
+
+        - **Slope 1.4**: Common factory default (Viessmann, Buderus, Vaillant)
+        - **Room temp 20°C**: DIN EN 12831 standard comfort
+        - **Night setback 4K**: VDI 2067 energy saving measure
+        - **Max Vorlauf 55°C**: Heat pump limit per manufacturer specs
+        - **Summer cutoff 15°C**: Standard Heizgrenztemperatur
+        """)
+
 
 # =============================================================================
 # Tabs
