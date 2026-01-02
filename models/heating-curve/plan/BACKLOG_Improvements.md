@@ -454,9 +454,9 @@ Centralize algorithm configuration and thresholds.
 Create detailed documentation of each algorithm's approach, assumptions, and limitations.
 
 **Rationale:**
-- Important for interview presentation
-- Helps future developers
-- Supports customer explanations
+- Important for educational value and public reference
+- Helps future developers and contributors
+- Supports understanding for end users
 
 **Acceptance Criteria:**
 - [ ] Each algorithm documented

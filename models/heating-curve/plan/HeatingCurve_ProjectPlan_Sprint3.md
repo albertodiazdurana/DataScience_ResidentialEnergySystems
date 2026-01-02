@@ -24,12 +24,31 @@ Develop an interactive Streamlit application that allows users to:
 
 A fully functional Streamlit application (`app/streamlit_app.py`) with modular code structure ready for future enhancements.
 
-### Business Value
+### Long-Term Vision
 
-- Demonstrates full-stack data science capabilities (simulation → analysis → visualization)
-- Interactive tool for exploring heating curve concepts
-- Portfolio piece for Green Fusion interview
-- Foundation for production deployment
+This application is part of a larger initiative to create an **open-source collection of models and simulations for residential energy systems**. The goal is to provide:
+
+- **Educational resources** for understanding heating system behavior
+- **Reference implementations** of common algorithms and control strategies
+- **Interactive tools** for energy engineers, building managers, and the general public
+- **Reproducible research** with documented methodologies
+
+### Target Audience
+
+| Audience | Use Case |
+|----------|----------|
+| Energy engineers | Validate system configurations, explore optimization |
+| Building managers | Understand heating behavior, identify issues |
+| Students & researchers | Learn heating curve concepts, test algorithms |
+| Data scientists | Reference implementations, algorithm comparison |
+| General public | Educational exploration of heating systems |
+
+### Value Proposition
+
+- **Educational**: Interactive learning tool for heating system fundamentals
+- **Practical**: Analyze real building data without specialized software
+- **Open**: Transparent methodology, reproducible results
+- **Extensible**: Modular design for adding new components (heat pumps, solar thermal, etc.)
 
 ---
 
@@ -518,7 +537,34 @@ From BACKLOG_Improvements.md:
 
 ---
 
-## 11. Handoff Checklist
+## 11. Future Roadmap (Beyond Sprint 3)
+
+This heating curve module is the first component of a broader **Residential Energy Systems** collection:
+
+### Planned Modules
+
+| Module | Description | Priority |
+|--------|-------------|----------|
+| **Heating Curve** | Heizkennlinie simulation and analysis | Current |
+| **Heat Pump** | COP modeling, performance curves | High |
+| **District Heating** | Fernwärme optimization, return temp | High |
+| **Solar Thermal** | Collector efficiency, storage | Medium |
+| **Building Thermal Mass** | Thermal inertia, response times | Medium |
+| **Hybrid Systems** | Combined heat sources optimization | Low |
+| **Sector Coupling** | PV + Heat Pump + Storage | Low |
+
+### Platform Evolution
+
+| Phase | Focus |
+|-------|-------|
+| Phase 1 | Individual module apps (Streamlit) |
+| Phase 2 | Unified dashboard with module selection |
+| Phase 3 | API for programmatic access |
+| Phase 4 | Community contributions and extensions |
+
+---
+
+## 12. Handoff Checklist
 
 At sprint completion:
 
@@ -528,6 +574,7 @@ At sprint completion:
 - [ ] Sprint 3 handoff document created
 - [ ] BACKLOG updated with findings
 - [ ] README for app created
+- [ ] Code commented for educational purposes
 
 ---
 

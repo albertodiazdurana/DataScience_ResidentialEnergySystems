@@ -424,13 +424,13 @@ models/heating-curve/
    - Currently hardcoded to 20°C
    - Should be extracted from data
 
-### Recommendation for Production
+### Recommendation for Production Use
 
-**For Green Fusion GmbH interview context:**
+**Algorithm selection based on data quality:**
 
-- **Model 1 data quality:** Use OLS (fast, interpretable)
-- **Model 2 data quality:** Use RANSAC (robust, minimal overhead)
-- **Model 3 data quality:** Requires advanced preprocessing + quantile/piecewise regression
+- **Model 1 data quality (clean sensors):** Use OLS (fast, interpretable)
+- **Model 2 data quality (typical sensors):** Use RANSAC (robust, minimal overhead)
+- **Model 3 data quality (degraded sensors):** Requires advanced preprocessing + quantile/piecewise regression
 - **Real buildings:** Most likely Model 2 quality → RANSAC recommended
 
 ---
