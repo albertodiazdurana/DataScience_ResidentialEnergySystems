@@ -6,7 +6,7 @@ An open-source collection of models, simulations, and interactive tools for unde
 
 | Module | Description | Demo |
 |--------|-------------|------|
-| **Heating Curve** | Simulate and analyze heating curves (Heizkennlinie) | [Try it](https://datascience-residentialenergysystems-heating-curve.streamlit.app) |
+| **Heating Curve** | Simulate and analyze heating curves (Heizkennlinie) | [Try it](https://data-science-residential-energy-systems-heating-curve.streamlit.app/) |
 
 ## Project Goals
 
@@ -115,7 +115,7 @@ streamlit run app/streamlit_app.py
 
 ### Use the Live Demo
 
-Visit the [Heating Curve App](https://datascience-residentialenergysystems-heating-curve.streamlit.app) directly in your browser.
+Visit the [Heating Curve App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/) directly in your browser.
 
 ## Technology Stack
 

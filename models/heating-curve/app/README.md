@@ -4,7 +4,7 @@ Interactive web application for simulating and analyzing heating curves (Heizken
 
 ## Live Demo
 
-**[Try the app on Streamlit Community Cloud](https://datascience-residentialenergysystems-heating-curve.streamlit.app)**
+**[Try the app on Streamlit Community Cloud](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
 
 ## Quick Start (Local Development)
 
