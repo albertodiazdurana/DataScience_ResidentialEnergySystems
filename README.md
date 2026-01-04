@@ -4,6 +4,8 @@ An open-source collection of models, simulations, and interactive tools for unde
 
 ## Live Applications
 
+Interactive demos hosted on Streamlit Community Cloud:
+
 | Module | Description | Demo |
 |--------|-------------|------|
 | **Heating Curve** | Simulate and analyze heating curves (Heizkennlinie) | [Try it](https://data-science-residential-energy-systems-heating-curve.streamlit.app/) |
@@ -48,14 +50,14 @@ T_vorlauf = T_base + K × (T_room - T_outdoor)
 
 ## Planned Modules
 
-| Module | Description | Priority |
-|--------|-------------|----------|
-| Heat Pump | COP modeling, performance curves | High |
-| District Heating | Fernwärme optimization, return temperature | High |
-| Solar Thermal | Collector efficiency, storage | Medium |
-| Building Thermal Mass | Thermal inertia, response times | Medium |
-| Hybrid Systems | Combined heat sources optimization | Low |
-| Sector Coupling | PV + Heat Pump + Storage | Low |
+| Module | Description |
+|--------|-------------|
+| Heat Pump | COP modeling, performance curves |
+| District Heating | Fernwärme optimization, return temperature |
+| Solar Thermal | Collector efficiency, storage |
+| Building Thermal Mass | Thermal inertia, response times |
+| Hybrid Systems | Combined heat sources optimization |
+| Sector Coupling | PV + Heat Pump + Storage |
 
 ## Standards & References
 
