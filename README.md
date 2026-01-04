@@ -83,10 +83,8 @@ DataScience_ResidentialEnergySystems/
 │       │   ├── simulation.py    # Simulation functions
 │       │   ├── analysis.py      # Analysis algorithms
 │       │   └── config.py        # Configuration & presets
-│       ├── model.ipynb          # Sprint 1: Simulation notebook
-│       ├── analysis.ipynb       # Sprint 2: Analysis notebook
-│       └── plan/                # Project planning documents
-├── project-knowledge/           # Domain knowledge & references
+│       ├── model.ipynb          # Simulation notebook
+│       └── analysis.ipynb       # Analysis notebook
 └── README.md                    # This file
 ```
 

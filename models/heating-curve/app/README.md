@@ -122,9 +122,8 @@ datetime,t_outdoor,t_vorlauf,is_night
 
 ## Related Files
 
-- [model.ipynb](../model.ipynb) - Sprint 1: Simulation development
-- [analysis.ipynb](../analysis.ipynb) - Sprint 2: Algorithm development
-- [Sprint 3 Plan](../plan/HeatingCurve_ProjectPlan_Sprint3.md) - Application development plan
+- [model.ipynb](../model.ipynb) - Simulation development
+- [analysis.ipynb](../analysis.ipynb) - Algorithm development
 
 ## License
 
