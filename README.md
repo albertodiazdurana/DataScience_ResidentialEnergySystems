@@ -59,6 +59,10 @@ T_vorlauf = T_base + K × (T_room - T_outdoor)
 | Hybrid Systems | Combined heat sources optimization |
 | Sector Coupling | PV + Heat Pump + Storage |
 
+## Related Resources
+
+📚 **[Residential Heating Data Science Guide](https://github.com/albertodiazdurana/residential-heating-data-science-guide)** — A comprehensive educational knowledge base bridging energy engineering and data science. Covers thermodynamic principles, German heating standards, ML methodologies for heating optimization, and MLOps practices for energy systems. Serves as the theoretical companion to this hands-on repository.
+
 ## Standards & References
 
 Parameter values throughout this project are based on German norms:
